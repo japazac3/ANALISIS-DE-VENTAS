@@ -1,0 +1,5 @@
+{
+  "name": "ANÁLISIS DE VENTAS",
+  "description": "Dashboard interactivo para análisis de ventas con carga de archivos Excel y CSV, KPIs y gráficos dinámicos.",
+  "requestFramePermissions": []
+}

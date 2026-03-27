@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-primary: #e91e63;
+  --color-secondary: #9c27b0;
+  --color-accent: #2196f3;
+  --color-warning: #ff9800;
+  --color-success: #4caf50;
+  --color-sidebar-bg: #ffffff;
+  --color-main-bg: #f8f9fd;
+}
+
+@layer base {
+  body {
+    @apply bg-[--color-main-bg] text-slate-700 font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white border-none shadow-[0_8px_30px_rgb(0,0,0,0.04)] rounded-2xl;
+}
+
+.kpi-card-vibrant {
+  @apply rounded-2xl p-6 text-white shadow-lg flex flex-col justify-between transition-transform hover:scale-[1.02];
+}
+
+.sidebar-item {
+  @apply flex items-center gap-3 px-6 py-3 text-slate-400 hover:text-primary hover:bg-pink-50 transition-all cursor-pointer border-l-4 border-transparent hover:border-primary;
+}
+
+.sidebar-item.active {
+  @apply text-primary bg-pink-50 border-primary;
+}
+
+.btn-primary {
+  @apply bg-primary hover:bg-pink-600 text-white px-4 py-2 rounded-lg font-semibold transition-all shadow-md shadow-pink-200;
+}
+
+.status-badge {
+  @apply px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider;
+}
+
